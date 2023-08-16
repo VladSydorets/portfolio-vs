@@ -8,6 +8,7 @@ export default function Projects() {
         <ProjectCard
           key={project.title}
           title={project.title}
+          tags={project.tags}
           description={project.description}
           thumbnail={project.thumbnail}
           link={project.link}

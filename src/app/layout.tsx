@@ -1,14 +1,14 @@
 import Navbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
 import Footer from "@/components/footer";
+import Providers from "./providers";
+import { Poppins } from "next/font/google";
 
-const roboto = Roboto({
+const poppins = Poppins({
+  weight: ["500"],
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-roboto",
-  display: "swap",
+  style: "normal",
 });
 
 export const metadata: Metadata = {
@@ -24,11 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} flex min-h-screen flex-col items-center justify-between px-12 bg-[#0d213b] text-slate-200`}
+        className={`${poppins.className} flex min-h-screen flex-col items-center justify-between px-12 dark:bg-[#0d213b] bg-[#FAF7F5] dark:text-slate-200 text-black`}
       >
-        <Navbar />
-        <main className="w-full">{children}</main>
-        <Footer />
+        <Providers>
+          <Navbar />
+          <main className="w-full">{children}</main>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

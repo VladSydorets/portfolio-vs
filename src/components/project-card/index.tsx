@@ -1,39 +1,46 @@
 import Image from "next/image";
-import { Inconsolata } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Project } from "@/types/project";
+import Button from "../button";
 
-const inconsolata = Inconsolata({
+const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "700"],
   style: ["normal"],
 });
 
-const ProjectCard: React.FC<Project> = (props) => {
+export default function ProjectCard(props: Project) {
   return (
-    <div className="flex justify-between gap-5 w-full border rounded-[4px] border-[#A855F7] p-4 max-h-80">
-      <Image
-        src={props.thumbnail}
-        className="rounded-xl border border-black"
-        alt="project image"
-        width={300}
-        height={150}
-      />
+    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
+      <div className="h-[3in] rounded-xl overflow-hidden relative">
+        <Image
+          fill
+          className="object-cover h-full w-full absolute inset-0"
+          sizes="(min-width: 1280px) 50vw, 85vw"
+          src={props.thumbnail}
+          placeholder="blur"
+          alt="project image"
+        />
+      </div>
       <div
-        className={`${inconsolata.className} flex flex-col gap-4 justify-between p-2 w-full`}
+        className={`${poppins.className} flex flex-col gap-4 justify-between pt-4 p-8`}
       >
+        <ul className="flex flex-wrap gap-3 text-xs">
+          {props.tags?.map((tag) => (
+            <li
+              key={tag}
+              className="bg-purple-400 px-2 py-1 rounded-3xl cursor-default"
+            >
+              {tag}
+            </li>
+          ))}
+        </ul>
         <div className="project-card-text flex flex-col gap-3">
           <h3 className={`font-bold text-4xl`}>{props.title}</h3>
           <p className="">{props.description}</p>
         </div>
-        <a
-          href={props.link}
-          className="self-end px-4 py-2 border-[1px] mr-6 rounded-[4px] border-[#A855F7] bg-[#1f3d63] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:shadow-[#A855F7] hover:shadow-4gr"
-        >
-          See more
-        </a>
+        <Button text="See more" link={props.link} className="self-end" />
       </div>
     </div>
   );
-};
-
-export default ProjectCard;
+}

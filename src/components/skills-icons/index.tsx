@@ -20,7 +20,9 @@ export default function SkillIcons() {
             >
               {icon}
             </Link>
-            <span className="text-xl text-slate-400">{name}</span>
+            <span className="text-xl dark:text-slate-400 text-slate-700">
+              {name}
+            </span>
           </li>
         ))}
       </ul>

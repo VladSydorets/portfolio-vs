@@ -33,7 +33,7 @@ export default function SocialIcons() {
           <li
             key={name}
             title={name}
-            className="social-icons-list-item hover:text-purple-500 transition-all duration-700 ease-in text-xl hover:-translate-y-0.5 hover:rotate-[360deg]"
+            className="social-icons-list-item hover:text-purple-500 transition-all duration-700 ease-in text-2xl hover:-translate-y-0.5 hover:rotate-[360deg]"
           >
             <Link
               href={link}
