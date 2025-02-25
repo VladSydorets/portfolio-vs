@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { Aleo } from "next/font/google";
 import TypingText from "../typing-text";
+import Button from "../button";
+import { FiDownload, FiArrowRightCircle } from "react-icons/fi";
+// import { BsFillArrowRightSquareFill } from "react-icons/bs";
 
 const aleo = Aleo({ weight: ["700"], subsets: ["latin"], style: ["normal"] });
 
@@ -22,10 +25,18 @@ export default function Hero() {
         <span className="text-[#FFB86C]">Full-stack</span> Web and Mobile
         Development.
       </p>
-      <div className="px-6 py-4 border-[1px] rounded-[4px] border-[#A855F7] cursor-pointer text-[#A855F7] hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:shadow-[#A855F7] hover:shadow-4gr">
-        <a href={"#"} target="_blank" rel="noreferrer">
-          Explore more
-        </a>
+      <div className="buttons-row flex">
+        <Button
+          text="Contact me"
+          link="/contact"
+          icon={<FiArrowRightCircle />}
+        />
+        <Button
+          link="/assets/resume/cv.pdf"
+          download="Vlad_Sydorets_CV.pdf"
+          text="Download CV"
+          icon={<FiDownload />}
+        />
       </div>
     </section>
   );

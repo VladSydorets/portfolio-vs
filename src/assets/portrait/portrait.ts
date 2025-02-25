@@ -1,3 +1,3 @@
-import portrait from "./portrait.png";
+import portrait from "./portrait.jpeg";
 
 export { portrait };

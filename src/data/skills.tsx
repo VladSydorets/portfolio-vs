@@ -1,9 +1,10 @@
-import { FaHtml5, FaCss3Alt, FaVuejs } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaVuejs, FaNpm } from "react-icons/fa";
 import {
   BiLogoJavascript,
   BiLogoTypescript,
   BiLogoReact,
   BiLogoNodejs,
+  BiLogoJava,
   BiLogoPython,
   BiLogoGoLang,
   BiLogoMongodb,
@@ -12,7 +13,12 @@ import {
   BiLogoAws,
   BiLogoDocker,
 } from "react-icons/bi";
-import { TbBrandNextjs, TbBrandThreejs } from "react-icons/tb";
+import {
+  TbBrandNextjs,
+  TbBrandThreejs,
+  TbBrandReactNative,
+} from "react-icons/tb";
+import { SiPrisma } from "react-icons/si";
 import { Skill } from "@/types/skills";
 
 export const skills: Skill[] = [
@@ -62,9 +68,19 @@ export const skills: Skill[] = [
     link: "https://threejs.org/",
   },
   {
+    name: "React Native",
+    icon: <TbBrandReactNative />,
+    link: "https://reactnative.dev/",
+  },
+  {
     name: "Node.js",
     icon: <BiLogoNodejs />,
     link: "https://nodejs.org/en/",
+  },
+  {
+    name: "Java",
+    icon: <BiLogoJava />,
+    link: "https://www.java.com/en/",
   },
   {
     name: "Python",
@@ -82,6 +98,11 @@ export const skills: Skill[] = [
     link: "https://www.mongodb.com/",
   },
   {
+    name: "Prisma",
+    icon: <SiPrisma />,
+    link: "https://www.prisma.io/",
+  },
+  {
     name: "PosgtreSQL",
     icon: <BiLogoPostgresql />,
     link: "https://www.postgresql.org/",
@@ -96,5 +117,10 @@ export const skills: Skill[] = [
     name: "Docker",
     icon: <BiLogoDocker />,
     link: "https://www.docker.com/",
+  },
+  {
+    name: "npm",
+    icon: <FaNpm />,
+    link: "https://www.npmjs.com/",
   },
 ];

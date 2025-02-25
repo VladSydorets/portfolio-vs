@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import Footer from "@/components/footer";
 import Providers from "./providers";
 import { Poppins } from "next/font/google";
+import { Suspense } from "react";
+import Loading from "./loading";
 
 const poppins = Poppins({
   weight: ["500"],
@@ -26,11 +28,13 @@ export default function RootLayout({
       <body
         className={`${poppins.className} flex min-h-screen flex-col items-center justify-between px-12 dark:bg-[#0d213b] bg-[#FAF7F5] dark:text-slate-200 text-black`}
       >
-        <Providers>
-          <Navbar />
-          <main className="w-full">{children}</main>
-          <Footer />
-        </Providers>
+        <Suspense fallback={<Loading />}>
+          <Providers>
+            <Navbar />
+            <main className="w-full">{children}</main>
+            <Footer />
+          </Providers>
+        </Suspense>
       </body>
     </html>
   );

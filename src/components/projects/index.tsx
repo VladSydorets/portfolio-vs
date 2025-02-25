@@ -11,7 +11,8 @@ export default function Projects() {
           tags={project.tags}
           description={project.description}
           thumbnail={project.thumbnail}
-          link={project.link}
+          demo={project.demo}
+          repo={project.repo}
         />
       ))}
     </div>

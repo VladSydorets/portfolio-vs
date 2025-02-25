@@ -4,6 +4,7 @@ export type Project = {
   title: string;
   description: string;
   thumbnail: StaticImageData;
-  link: string;
+  demo: string;
+  repo: string;
   tags: string[];
 };

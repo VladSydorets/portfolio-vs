@@ -6,7 +6,7 @@ import { portrait } from "@/assets/portrait/portrait";
 
 export default function About() {
   return (
-    <div className="container flex flex-col items-center min-h-screen p-16">
+    <div className="flex flex-col items-center min-h-screen p-16">
       <div className="mb-12">
         <Title title="About me" />
       </div>
@@ -37,7 +37,7 @@ export default function About() {
             <span className="text-[#A855F7] font-medium">
               Software Engineer
             </span>
-            👩🏻‍💻 based in Slovakia, who enjoys creating new things for the web and
+            👩🏻‍💻 based in Poland, who enjoys creating new things for the web and
             mobile and has a passion for problem solving. With the successful
             completion of my Bachelor&lsquo;s Degree at the Technical University
             of Košice, my educational background equips me with a profound

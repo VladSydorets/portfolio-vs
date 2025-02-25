@@ -89,47 +89,15 @@
 
 .nav-list a span {
   display: inline-block;
-  animation: movingOut 0.7s cubic-bezier(0.76, 0, 0.24, 1) forwards;
 }
 
 .nav-list a:hover span {
-  animation: movingIn 0.7s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  color: #a855f7;
 }
 
 .nav-list a.active-link::before {
   background-color: #a855f7;
   transform-origin: 0% 50%;
-  transform: scaleX(1);
-}
-
-@keyframes movingIn {
-  0% {
-    transform: translate3d(0, 0, 0);
-    color: inherit;
-  }
-  50% {
-    transform: translate3d(0, -100%, 0);
-    color: transparent;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    color: #a855f7;
-  }
-}
-
-@keyframes movingOut {
-  0% {
-    transform: translate3d(0, 0, 0);
-    color: #a855f7;
-  }
-  50% {
-    transform: translate3d(0, -100%, 0);
-    color: transparent;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    color: inherit;
-  }
 }
 
 /* Title Word Effect */

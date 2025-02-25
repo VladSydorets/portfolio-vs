@@ -14,7 +14,11 @@ export const navigation: Navigation[] = [
     title: "2. Projects",
   },
   {
+    href: "/experience",
+    title: "3. Experience",
+  },
+  {
     href: "/contact",
-    title: "3. Contact me",
+    title: "4. Contact",
   },
 ];

@@ -2,6 +2,8 @@ import Image from "next/image";
 import { Poppins } from "next/font/google";
 import { Project } from "@/types/project";
 import Button from "../button";
+import { FaGithub } from "react-icons/fa";
+import { FaRegEye } from "react-icons/fa6";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -39,7 +41,20 @@ export default function ProjectCard(props: Project) {
           <h3 className={`font-bold text-4xl`}>{props.title}</h3>
           <p className="">{props.description}</p>
         </div>
-        <Button text="See more" link={props.link} className="self-end" />
+        <div className="flex justify-start">
+          <Button
+            text="Go to repo"
+            link={props.repo}
+            icon={<FaGithub />}
+            className=""
+          />
+          <Button
+            text="View site!"
+            link={props.demo}
+            icon={<FaRegEye />}
+            className=""
+          />
+        </div>
       </div>
     </div>
   );
