@@ -8,7 +8,7 @@ import { Suspense } from "react";
 import Loading from "./loading";
 
 const poppins = Poppins({
-  weight: ["500"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"],
   style: "normal",
 });
