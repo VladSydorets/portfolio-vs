@@ -7,7 +7,7 @@ export default function Input(
   return (
     <input
       {...props}
-      className="px-4 py-2 border-[1px] mr-6 rounded-[4px] border-[#A855F7] bg-[#152b46] outline-none"
+      className="px-4 py-2 mr-6 rounded-[4px] dark:bg-[#2d5485] bg-[#f4ebf5] outline-none"
     />
   );
 }
