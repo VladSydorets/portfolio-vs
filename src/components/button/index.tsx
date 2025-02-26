@@ -1,11 +1,4 @@
 import { Button } from "@/types/button";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  weight: ["500"],
-  subsets: ["latin"],
-  style: "normal",
-});
 
 export default function Button(props: Button) {
   const btnStyles =
@@ -14,9 +7,7 @@ export default function Button(props: Button) {
     return (
       <a
         href={props.link}
-        className={`${props.className ? props.className : ""} ${btnStyles} ${
-          poppins.className
-        }`}
+        className={`${props.className ? props.className : ""} ${btnStyles} `}
         download={props.download}
         target="_blank"
         rel="noreferrer"
@@ -27,9 +18,7 @@ export default function Button(props: Button) {
   } else
     return (
       <button
-        className={`${props.className ? props.className : ""} ${btnStyles} ${
-          poppins.className
-        }`}
+        className={`${props.className ? props.className : ""} ${btnStyles} `}
       >
         {props.text} <span className="text-2xl">{props.icon}</span>
       </button>

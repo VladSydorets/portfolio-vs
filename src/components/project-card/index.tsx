@@ -1,15 +1,8 @@
 import Image from "next/image";
-import { Poppins } from "next/font/google";
 import { Project } from "@/types/project";
 import Button from "../button";
 import { FaGithub } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  style: ["normal"],
-});
 
 export default function ProjectCard(props: Project) {
   return (
@@ -24,9 +17,7 @@ export default function ProjectCard(props: Project) {
           alt="project image"
         />
       </div>
-      <div
-        className={`${poppins.className} flex flex-col gap-4 justify-between pt-4 p-8`}
-      >
+      <div className="flex flex-col gap-4 justify-between pt-4 p-8">
         <ul className="flex flex-wrap gap-3 text-xs">
           {props.tags?.map((tag) => (
             <li

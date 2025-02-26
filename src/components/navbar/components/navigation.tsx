@@ -3,13 +3,6 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { navigation } from "@/data/navigation";
-import { Poppins } from "next/font/google";
-
-const poppins = Poppins({
-  weight: ["500"],
-  subsets: ["latin"],
-  style: "normal",
-});
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -18,7 +11,7 @@ export default function Navigation() {
 
   const hoverStyles = "";
   return (
-    <div className={`nav-list flex gap-6 ${poppins.className}`}>
+    <div className={`nav-list flex gap-6`}>
       {navigation.map((link) => {
         const isActive = pathname === link.href;
         return (

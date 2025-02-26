@@ -3,12 +3,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { Poppins } from "next/font/google";
 
-const poppins = Poppins({
-  weight: ["500"],
-  subsets: ["latin"],
-  style: "normal",
-});
-
 export default function TypingText() {
   return (
     <>
@@ -26,7 +20,7 @@ export default function TypingText() {
         wrapper="span"
         cursor={true}
         repeat={Infinity}
-        className={`text-xl bg:text-[#E2E8F0] text-slate-500 font-medium ${poppins.className}`}
+        className="text-xl bg:text-[#E2E8F0] text-slate-500 font-medium"
       />
     </>
   );
