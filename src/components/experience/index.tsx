@@ -7,7 +7,7 @@ export default function Experience() {
     <div className="w-full flex flex-col gap-12">
       {experiences.map((experience) => (
         <ExperienceCard
-          key={experience.title}
+          key={experience.companyName}
           companyName={experience.companyName}
           companyLink={experience.companyLink}
           location={experience.location}
