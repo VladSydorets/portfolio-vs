@@ -14,6 +14,7 @@ export default function Experience() {
           date={experience.date}
           position={experience.position}
           description={experience.description}
+          skills={experience.skills}
         />
       ))}
     </div>
