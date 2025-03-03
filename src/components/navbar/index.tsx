@@ -5,7 +5,7 @@ import Link from "next/link";
 import ThemeSwitcher from "./components/theme-switcher";
 import Button from "../button";
 import Navigation from "./components/navigation";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { FiDownload } from "react-icons/fi";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
