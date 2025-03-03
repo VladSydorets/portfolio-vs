@@ -9,7 +9,7 @@ export default function Error({ errorName }: ErrorProps) {
   return (
     <div className="h-6">
       {errorName?.message && (
-        <span className="text-red-500 text-sm ">{errorName.message}</span>
+        <span className="text-red-500 text-sm">{errorName.message}</span>
       )}
     </div>
   );

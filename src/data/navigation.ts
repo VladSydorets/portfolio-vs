@@ -2,23 +2,19 @@ import { Navigation } from "@/types/navigation";
 
 export const navigation: Navigation[] = [
   {
-    href: "/",
-    title: "0. Home",
-  },
-  {
     href: "/about",
-    title: "1. About",
+    title: "0. About",
   },
   {
     href: "/projects",
-    title: "2. Projects",
+    title: "1. Projects",
   },
   {
     href: "/experience",
-    title: "3. Experience",
+    title: "2. Experience",
   },
   {
     href: "/contact",
-    title: "4. Contact",
+    title: "3. Contact",
   },
 ];

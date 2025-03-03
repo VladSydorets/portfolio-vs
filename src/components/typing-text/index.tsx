@@ -1,21 +1,18 @@
 "use client";
 
 import { TypeAnimation } from "react-type-animation";
-import { Poppins } from "next/font/google";
 
 export default function TypingText() {
   return (
     <>
       <TypeAnimation
         sequence={[
-          "Software Engineer", // Types 'Software Engineer'
-          1000, // Waits 1s
-          "Freelancer", // Deletes 'Software Engineer' and types 'Freelancer'
-          2000, // Waits 2s
-          "Cat Lover", // Types 'Cat Lover' without deleting 'Freelancer'
-          () => {
-            // console.log("Sequence completed");
-          },
+          "Software Engineer",
+          1000,
+          "Freelancer",
+          2000,
+          "Cat Lover",
+          () => {},
         ]}
         wrapper="span"
         cursor={true}

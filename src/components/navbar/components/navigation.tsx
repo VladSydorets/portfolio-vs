@@ -7,11 +7,13 @@ import { navigation } from "@/data/navigation";
 export default function Navigation() {
   const pathname = usePathname();
   const linkStyles =
-    "dark:text-slate-200 text-black px-3 py-1 duration-200 transition-all transition-translate duration-100 ease-in flex flex-direction";
+    "dark:text-slate-200 text-black px-3 py-1 duration-200 transition-all transition-translate duration-100 ease-in flex text-sm lg:text-base xl:text-lg";
 
   const hoverStyles = "";
   return (
-    <div className={`nav-list flex gap-6`}>
+    <div
+      className={`nav-list flex gap-6 lg:gap-4 flex-col lg:flex-row items-center`}
+    >
       {navigation.map((link) => {
         const isActive = pathname === link.href;
         return (
