@@ -25,7 +25,8 @@ export default function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="flex justify-between items-center w-full px-8 py-6">
+    <nav className="flex justify-between items-center w-full container py-6">
+      {/* px-0 md:px-10 lg:px-16 py-6"> */}
       <div className="flex gap-4">
         <Link
           href="/"

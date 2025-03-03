@@ -6,7 +6,7 @@ import { FaRegEye } from "react-icons/fa6";
 
 export default function ProjectCard(props: Project) {
   return (
-    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
+    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-full lg:w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
       <div className="h-[3in] rounded-xl overflow-hidden relative">
         <Image
           fill
@@ -29,10 +29,14 @@ export default function ProjectCard(props: Project) {
           ))}
         </ul>
         <div className="project-card-text flex flex-col gap-3">
-          <h3 className={`font-bold text-4xl`}>{props.title}</h3>
-          <p className="">{props.description}</p>
+          <h3
+            className={`font-bold text-xl sm:text-2xl md:text-3xl lg:text-4xl`}
+          >
+            {props.title}
+          </h3>
+          <p className="text-sm md:text-base">{props.description}</p>
         </div>
-        <div className="flex justify-start">
+        <div className="flex justify-start gap-2">
           <Button
             text="Go to repo"
             link={props.repo}

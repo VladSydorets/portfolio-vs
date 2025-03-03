@@ -6,7 +6,7 @@ import { FaPhone } from "react-icons/fa";
 
 export default function ContactInformation() {
   return (
-    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-1/2 p-6 px-8">
+    <div className="flex flex-col justify-between items-center lg:items-start gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-full lg:w-1/2 p-6 px-8">
       <h2 className="text-2xl font-semibold">Contact Information</h2>
       <div className="flex flex-col gap-2">
         <Link

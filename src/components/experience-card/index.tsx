@@ -24,7 +24,7 @@ export default function ExperienceCard(props: Experience) {
             <FaRegCalendar />
             {props.date}
           </p>
-          <ul className="list-disc pl-5">
+          <ul className="list-disc text-sm md:text-base pl-5">
             {props.description.split(". ").map((bulletpoint, index) => (
               <li key={index}>{bulletpoint}</li>
             ))}

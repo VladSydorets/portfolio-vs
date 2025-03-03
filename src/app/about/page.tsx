@@ -6,12 +6,12 @@ import { portrait } from "@/assets/portrait/portrait";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center min-h-screen p-16">
+    <section className="flex flex-col items-center min-h-screen py-16 container m-auto">
       <div className="mb-12">
         <Title title="About me" />
       </div>
-      <div className="content flex">
-        <div className="card w-1/3 flex flex-col items-center gap-4">
+      <div className="content flex gap-4 items-center sm:items-start flex-col sm:flex-row">
+        <div className="card w-full sm:w-1/3 flex flex-col items-center gap-4">
           <div className="rounded-full w-48 h-48 bg-purple-700 overflow-hidden relative">
             <Image
               className="object-cover h-full w-full absolute inset-0"
@@ -21,7 +21,7 @@ export default function About() {
               placeholder="blur"
             />
           </div>
-          <div className="card-desc text-center">
+          <div className="text-center">
             <h2 className="text-2xl font-medium mb-1">Vlad Sydorets</h2>
             <p className="text-base dark:text-slate-400 text-slate-700">
               Software Engineer
@@ -29,7 +29,7 @@ export default function About() {
           </div>
           <SocialIcons></SocialIcons>
         </div>
-        <div className="desc-text dark:text-slate-400 text-slate-700 flex flex-col gap-4 w-2/3">
+        <div className="text-sm sm:text-base text-center sm:text-left dark:text-slate-400 text-slate-700 flex flex-col gap-4 w-full sm:w-2/3">
           <p>
             Hello, World! My name is
             <span className="text-[#A855F7] font-medium"> Vlad </span> and I am
@@ -64,6 +64,6 @@ export default function About() {
       <div className="skills-block">
         <SkillIcons></SkillIcons>
       </div>
-    </div>
+    </section>
   );
 }

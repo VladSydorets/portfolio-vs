@@ -5,6 +5,7 @@ import { FormData } from "@/types/form";
 import { SubmitHandler, useForm } from "react-hook-form";
 import ContactInformation from "./components/contact-information";
 import Error from "./components/error";
+import Title from "@/components/title";
 import { IoIosSend } from "react-icons/io";
 import { sendEmail } from "@/actions/sendEmail";
 import { useState } from "react";
@@ -32,9 +33,9 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="flex flex-col items-center gap-12">
-      <h1 className="text-4xl font-semibold">Get in Touch</h1>
-      <div className="flex justify-between items-start gap-12 mb-10">
+    <section className="flex flex-col items-center min-h-screen py-16 container m-auto">
+      <Title title="Get in Touch" />
+      <div className="flex flex-col-reverse items-center lg:flex-row justify-between lg:items-start gap-12 mt-10">
         <ContactInformation></ContactInformation>
         <div className="flex flex-col gap-6 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] px-6 py-8 max-w-xl">
           <form
