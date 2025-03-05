@@ -49,7 +49,7 @@ export default function ContactForm() {
             className="flex flex-col gap-4"
             noValidate
           >
-            <div className="flex">
+            <div className="flex flex-col sm:flex-row">
               <div className="flex flex-col">
                 <label htmlFor="first-name">{t("first-name")}</label>
                 <Input
