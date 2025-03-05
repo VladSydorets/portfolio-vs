@@ -1,5 +1,6 @@
 "use client";
 
+import Loading from "@/app/loading";
 import { Experience } from "@/types/experience";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
@@ -8,8 +9,11 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { PiSuitcaseSimple } from "react-icons/pi";
 
 export default function ExperienceCard(props: Experience) {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
 
+  if (!ready) {
+    return <Loading />;
+  }
   return (
     <div className="flex flex-col justify-between gap-5 w-full">
       <div

@@ -6,10 +6,14 @@ import Button from "../button";
 import { FaGithub } from "react-icons/fa";
 import { FaRegEye } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+import Loading from "@/app/loading";
 
 export default function ProjectCard(props: Project) {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
 
+  if (!ready) {
+    return <Loading />;
+  }
   return (
     <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-full lg:w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
       <div className="h-[3in] rounded-xl overflow-hidden relative">

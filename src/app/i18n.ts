@@ -14,8 +14,15 @@ i18n
     interpolation: {
       escapeValue: false,
     },
+    detection: {
+      order: ["localStorage", "navigator"],
+      caches: ["localStorage"],
+    },
     backend: {
       loadPath: "/locales/{{lng}}/translation.json",
+    },
+    react: {
+      useSuspense: false,
     },
   });
 

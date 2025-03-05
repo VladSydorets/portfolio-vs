@@ -10,9 +10,10 @@ import { IoIosSend } from "react-icons/io";
 import { sendEmail } from "@/actions/sendEmail";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import Loading from "@/app/loading";
 
 export default function ContactForm() {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
 
   const {
     register,
@@ -22,7 +23,9 @@ export default function ContactForm() {
   } = useForm<FormData>();
 
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
-
+  if (!ready) {
+    return <Loading />;
+  }
   const onSubmit: SubmitHandler<FormData> = async (data) => {
     setStatus("idle");
     const response = await sendEmail(data);

@@ -5,10 +5,14 @@ import React from "react";
 import SocialIcons from "../social-icons";
 import { Trans, useTranslation } from "react-i18next";
 import Image from "next/image";
+import Loading from "@/app/loading";
 
 export default function AboutContent() {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
 
+  if (!ready) {
+    return <Loading />;
+  }
   return (
     <div className="content flex gap-4 items-center sm:items-start flex-col sm:flex-row">
       <div className="card w-full sm:w-1/3 flex flex-col items-center gap-4">

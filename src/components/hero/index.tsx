@@ -5,12 +5,16 @@ import TypingText from "../typing-text";
 import Button from "../button";
 import { FiDownload, FiArrowRightCircle } from "react-icons/fi";
 import { useTranslation, Trans } from "react-i18next";
+import Loading from "@/app/loading";
 
 const aleo = Aleo({ weight: ["700"], subsets: ["latin"], style: ["normal"] });
 
 export default function Hero() {
-  const { t } = useTranslation();
+  const { t, ready } = useTranslation();
 
+  if (!ready) {
+    return <Loading />;
+  }
   return (
     <section className="flex flex-col gap-10 items-start container pt-24 lg:pt-28 xl:pt-32">
       <TypingText />
