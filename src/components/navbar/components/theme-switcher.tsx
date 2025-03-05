@@ -22,7 +22,7 @@ export default function ThemeSwitcher() {
     <div className="nav-theme-switch">
       <button
         onClick={() => setTheme(currentTheme === "light" ? "dark" : "light")}
-        className="flex items-center justify-center bg-transparent w-10 h-10 p-2 rounded-full dark:text-slate-200 text-black dark:border-gray-400 border-slate-300 border-[1px] cursor-pointer dark:hover:border-white hover:border-black transition-all duration-300"
+        className="flex items-center justify-center bg-transparent w-10 h-10 p-2 rounded-full dark:text-slate-200 text-black dark:border-[#A855F7] border-[#A855F7] border-[1px] cursor-pointer dark:hover:border-white hover:border-black transition-all duration-300"
       >
         <span>{currentTheme === "dark" ? <FiSun /> : <FiMoon />}</span>
       </button>

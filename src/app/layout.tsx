@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/navbar";
 import "./globals.css";
 import type { Metadata } from "next";
@@ -6,6 +8,7 @@ import Providers from "./providers";
 import { Poppins } from "next/font/google";
 import { Suspense } from "react";
 import Loading from "./loading";
+import "./i18n";
 
 const poppins = Poppins({
   weight: ["400", "500", "700"],

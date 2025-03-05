@@ -9,6 +9,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { FiDownload } from "react-icons/fi";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+import LanguageSwitcher from "../language-switcher";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +27,6 @@ export default function Navbar() {
 
   return (
     <nav className="flex justify-between items-center w-full container py-6">
-      {/* px-0 md:px-10 lg:px-16 py-6"> */}
       <div className="flex gap-4">
         <Link
           href="/"
@@ -47,6 +47,7 @@ export default function Navbar() {
           icon={<FiDownload />}
         />
         <ThemeSwitcher />
+        <LanguageSwitcher />
       </div>
 
       {/* Mobile Menu Button */}
@@ -98,13 +99,8 @@ export default function Navbar() {
                   />
                 </div>
                 <div className="flex gap-6 items-center">
-                  <Link href="/" locale="de-DE">
-                    To DE
-                  </Link>
-                  <Link href="/" locale="pl-PL">
-                    To PL
-                  </Link>
                   <ThemeSwitcher />
+                  <LanguageSwitcher />
                 </div>
               </div>
             </motion.div>

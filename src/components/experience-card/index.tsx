@@ -1,10 +1,15 @@
+"use client";
+
 import { Experience } from "@/types/experience";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { FaRegCalendar } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { PiSuitcaseSimple } from "react-icons/pi";
 
 export default function ExperienceCard(props: Experience) {
+  const { t } = useTranslation();
+
   return (
     <div className="flex flex-col justify-between gap-5 w-full">
       <div
@@ -50,7 +55,7 @@ export default function ExperienceCard(props: Experience) {
                 href={props.companyLink}
                 className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
               >
-                Visit website <FaExternalLinkAlt />
+                {t("view-site")} <FaExternalLinkAlt />
               </Link>
             ) : (
               ""

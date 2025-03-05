@@ -9,8 +9,11 @@ import Title from "@/components/title";
 import { IoIosSend } from "react-icons/io";
 import { sendEmail } from "@/actions/sendEmail";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
+
   const {
     register,
     handleSubmit,
@@ -34,7 +37,7 @@ export default function ContactForm() {
 
   return (
     <section className="flex flex-col items-center min-h-screen py-16 container m-auto">
-      <Title title="Get in Touch" />
+      <Title title={t("get-in-touch")} />
       <div className="flex flex-col-reverse items-center lg:flex-row justify-between lg:items-start gap-12 mt-10">
         <ContactInformation></ContactInformation>
         <div className="flex flex-col gap-6 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] px-6 py-8 max-w-xl">
@@ -45,45 +48,49 @@ export default function ContactForm() {
           >
             <div className="flex">
               <div className="flex flex-col">
-                <label htmlFor="first-name">First Name</label>
+                <label htmlFor="first-name">{t("first-name")}</label>
                 <Input
                   type="text"
                   id="first-name"
                   {...register("firstName", {
-                    required: "First name is required.",
+                    required: `${t("first-name-required")}`,
                   })}
                 />
                 <Error errorName={errors.firstName} />
               </div>
               <div className="flex flex-col">
-                <label htmlFor="last-name">Last Name</label>
+                <label htmlFor="last-name">{t("last-name")}</label>
                 <Input type="text" id="last-name" {...register("lastName")} />
               </div>
             </div>
             <div className="flex flex-col">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email">{t("email")}</label>
               <Input
                 type="email"
                 id="email"
-                {...register("email", { required: "Email is required." })}
+                {...register("email", { required: `${t("email-required")}` })}
               />
               <Error errorName={errors.email} />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="subject">Subject</label>
+              <label htmlFor="subject">{t("subject")}</label>
               <Input
                 type="text"
                 id="subject"
-                {...register("subject", { required: "Subject is required." })}
+                {...register("subject", {
+                  required: `${t("subject-required")}`,
+                })}
               />
               <Error errorName={errors.subject} />
             </div>
             <div className="flex flex-col">
-              <label htmlFor="message">Your Message</label>
+              <label htmlFor="message">{t("your-message")}</label>
               <textarea
                 id="message"
                 className="px-4 py-2 mr-6 rounded-[4px] dark:bg-[#2d5485] bg-[#f4ebf5] outline-none"
-                {...register("message", { required: "Message is required." })}
+                {...register("message", {
+                  required: `${t("message-required")}`,
+                })}
               />
               <Error errorName={errors.message} />
             </div>
@@ -92,14 +99,14 @@ export default function ContactForm() {
                 type="submit"
                 className="flex gap-2 items-center justify-center w-full px-4 py-2 border-[1px] mr-6 rounded-[4px] border-[#A855F7] dark:bg-[#152b46] bg-transparent hover:-translate-x-1 hover:-translate-y-1 transition-all duration-300 hover:shadow-[#A855F7] hover:shadow-4gr"
               >
-                <IoIosSend /> Send a Message
+                <IoIosSend /> {t("send-message")}
               </button>
             </div>
             {status === "success" && (
-              <p className="text-green-500">Message sent successfully!</p>
+              <p className="text-green-500">{t("message-sent-success")}</p>
             )}
             {status === "error" && (
-              <p className="text-red-500">Failed to send message.</p>
+              <p className="text-red-500">{t("message-sent-failure")}</p>
             )}
           </form>
         </div>
