@@ -10,9 +10,11 @@ import { FiDownload } from "react-icons/fi";
 import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import LanguageSwitcher from "../language-switcher";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     if (isOpen) {
@@ -24,6 +26,14 @@ export default function Navbar() {
       document.body.style.overflow = "unset";
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    const handleRouteChange = () => {
+      setIsOpen(false);
+    };
+
+    handleRouteChange();
+  }, [pathname]);
 
   return (
     <nav className="flex justify-between items-center w-full container py-6">
@@ -68,6 +78,7 @@ export default function Navbar() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4 }}
             className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden"
+            onClick={(e) => setIsOpen(false)}
           >
             <motion.div
               initial={{ x: "100%" }}

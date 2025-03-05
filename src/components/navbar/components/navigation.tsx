@@ -9,7 +9,6 @@ export default function Navigation() {
   const linkStyles =
     "dark:text-slate-200 text-black px-3 py-1 duration-200 transition-all transition-translate duration-100 ease-in flex text-sm lg:text-base xl:text-lg";
 
-  const hoverStyles = "";
   return (
     <div
       className={`nav-list flex gap-6 lg:gap-4 flex-col lg:flex-row items-center`}
@@ -21,7 +20,7 @@ export default function Navigation() {
             key={link.title}
             className={`${
               isActive ? "active-link" : ""
-            } ${linkStyles} ${hoverStyles} w-fit h-fit`}
+            } ${linkStyles} w-fit h-fit`}
             href={link.href}
           >
             <span data-content={link.title}>{link.title}</span>
