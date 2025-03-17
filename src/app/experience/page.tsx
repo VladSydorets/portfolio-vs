@@ -1,5 +1,16 @@
 import ExperienceComponent from "@/components/experience";
 import Title from "@/components/title";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Experience",
+  description:
+    "A brief description of my software engineering experience, developing in React, Python and TypeScript.",
+  openGraph: {
+    title: "Experience of Vladyslav Sydorets",
+    description: "Discover my latest professional experience.",
+  },
+};
 
 export default function Experience() {
   return (
