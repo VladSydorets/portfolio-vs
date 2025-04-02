@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![Full App Screenshot](![image](https://github.com/user-attachments/assets/c08a27ea-fc70-4754-b978-665ea7233956))
+![image](https://github.com/VladSydorets/portfolio-vs/assets/9098cf4e-4dae-41e6-9b32-ca74bfe8e7d0)
 
 Personal portfolio website showcasing all of my skills, projects, and experience relevant to software engineering.
 
