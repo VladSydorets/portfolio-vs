@@ -2,7 +2,7 @@ import type { Button } from "@/types/button";
 
 export default function Button(props: Button) {
   const btnStyles =
-    "flex gap-2 items-center px-4 py-2 border-[1px] rounded-[4px] border-[#A855F7] dark:text-white text-black bg-transparent transition-all duration-300 hover:shadow-[#A855F7] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-4gr";
+    "flex gap-2 items-center px-4 py-2 border-[1px] rounded-[4px] border-[#60A5FA] dark:text-white text-black bg-transparent transition-all duration-300 hover:shadow-[#60A5FA] hover:-translate-x-1 hover:-translate-y-1 hover:shadow-4gr";
   if (props.link) {
     return (
       <a

@@ -15,7 +15,7 @@ export default function ProjectCard(props: Project) {
     return <Loading />;
   }
   return (
-    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#1d3c66] bg-[#eecbf6] w-full lg:w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
+    <div className="flex flex-col justify-between gap-5 rounded-[16px] dark:bg-[#162d4c] bg-[#e8f0f5] w-full lg:w-1/2 m-auto transition-all duration-500 hover:scale-[102%]">
       <div className="h-[3in] rounded-xl overflow-hidden relative">
         <Image
           fill
@@ -31,7 +31,7 @@ export default function ProjectCard(props: Project) {
           {props.tags?.map((tag) => (
             <li
               key={tag}
-              className="bg-purple-400 px-2 py-1 rounded-3xl cursor-default"
+              className="dark:text-slate-700 bg-blue-200 px-2 py-1 rounded-3xl cursor-default"
             >
               {tag}
             </li>

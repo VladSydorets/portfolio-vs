@@ -63,7 +63,7 @@
   left: 0;
 }
 .nav-list a::before {
-  background-color: #a855f7;
+  background-color: #60a5fa;
   height: 1px;
   bottom: 0;
   transform-origin: 100% 50%;
@@ -77,7 +77,7 @@
   transform-origin: 100% 50%;
   transform: translate3d(200%, 0, 0);
   transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
-  color: #a855f7;
+  color: #60a5fa;
 }
 
 .nav-list a:hover::before {
@@ -93,11 +93,11 @@
 }
 
 .nav-list a:hover span {
-  color: #a855f7;
+  color: #60a5fa;
 }
 
 .nav-list a.active-link::before {
-  background-color: #a855f7;
+  background-color: #60a5fa;
   transform-origin: 0% 50%;
 }
 
@@ -133,16 +133,16 @@ html.light body {
 
 @keyframes color-change--light {
   0% {
-    background: #c2cbf4;
+    background: #e6e9fc;
   }
   33.3333% {
-    background: #9dabeb;
+    background: #dfe4fa;
   }
   66.666% {
-    background: #b4b7f2;
+    background: #f0f2fd;
   }
   100% {
-    background: #bcabf4;
+    background: #ece9fc;
   }
 }
 

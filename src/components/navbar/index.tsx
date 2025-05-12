@@ -11,10 +11,12 @@ import { HiMenu } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import LanguageSwitcher from "../language-switcher";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (isOpen) {
@@ -41,7 +43,7 @@ export default function Navbar() {
         <Link
           href="/"
           aria-label="Vlad Sydorets"
-          className="text-xl underline underline-offset-8 decoration-[#A855F7] hover:text-[#A855F7] transition-all duration-500 ease-in-out"
+          className="text-xl underline underline-offset-8 decoration-[#60A5FA] hover:text-[#60A5FA] transition-all duration-500 ease-in-out"
         >
           Vlad Sydorets
         </Link>
@@ -53,7 +55,7 @@ export default function Navbar() {
         <Button
           link="/assets/resume/cv.pdf"
           download="Vlad_Sydorets_CV.pdf"
-          text="Download CV"
+          text={t("download-cv")}
           icon={<FiDownload />}
         />
         <ThemeSwitcher />

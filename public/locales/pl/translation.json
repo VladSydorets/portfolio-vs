@@ -1,26 +1,56 @@
 {
   "software-engineer": "Inżynier Oprogramowania",
-  "my-name-is": "Hej! 👋 Nazywam się",
-  "intro-paragraph-1": "Witaj, świecie! Mam na imię <bold>Vlad</bold> i jestem Full-Stack <bold>Inżynierem Oprogramowania</bold> mieszkającym w Polsce, który lubi tworzyć nowe rzeczy dla internetu i urządzeń mobilnych oraz pasjonuje się rozwiązywaniem problemów. Po pomyślnym ukończeniu studiów licencjackich na Politechnice w Koszycach, moje wykształcenie zapewnia mi głębokie zrozumienie podstawowych zasad informatyki.",
-  "intro-paragraph-2": "Podczas mojej pracy jako programista frontend miałem nieocenioną okazję doskonalić swoje umiejętności w tworzeniu wizualnie atrakcyjnych i skoncentrowanych na użytkowniku interfejsów. Ten etap nie tylko umożliwił mi płynną współpracę z różnorodnymi, międzyfunkcyjnymi zespołami, ale także dał mi głęboki wgląd w sztukę projektowania doświadczeń użytkownika.",
-  "intro-paragraph-3": "Zapraszam do kontaktu za pomocą podanych informacji. Dziękuję za odwiedzenie mojej strony i czekam na możliwość wspólnej pracy nad urzeczywistnieniem Twoich technologicznych wizji.",
-  "get-in-touch": "Skontaktuj się",
-  "first-name": "Imię",
-  "last-name": "Nazwisko",
-  "email": "E-mail",
-  "subject": "Temat",
-  "your-message": "Twoja wiadomość",
-  "send-message": "Wyślij wiadomość",
-  "message-sent-success": "Wiadomość wysłana pomyślnie!",
-  "message-sent-failure": "Nie udało się wysłać wiadomości.",
-  "first-name-required": "Imię jest wymagane.",
-  "email-required": "E-mail jest wymagany.",
-  "subject-required": "Temat jest wymagany.",
-  "message-required": "Wiadomość jest wymagana.",
-  "visit-website": "Odwiedź stronę",
+  "my-name-is": "Cześć!👋 Mam na imię",
+  "made-with": "Stworzone za pomocą",
+  "for": "dla",
   "go-to-repo": "Przejdź do repozytorium",
   "view-site": "Zobacz stronę!",
-  "contact-me": "Skontaktuj się ze mną",
   "download-cv": "Pobierz CV",
-  "hero-paragraph": "Jestem <bold>Inżynierem Oprogramowania</bold>, który wykonuje swoją pracę. Obecnie skupiam się na <skill>Full-Stack</skill> rozwoju aplikacji webowych i mobilnych."
+  "skills": "Umiejętności",
+  "hero-paragraph": "Jestem <bold>Inżynierem Oprogramowania</bold>, który realizuje zadania. Obecnie skupiam się na <skill>Full-stack</skill> tworzeniu aplikacji webowych i mobilnych.",
+  "nav": {
+    "about": "0. O mnie",
+    "experience": "1. Doświadczenie",
+    "projects": "2. Projekty"
+  },
+  "about-me": {
+    "title": "O mnie",
+    "intro-paragraph-1": "Witaj, świecie! Nazywam się <bold>Vlad</bold> i jestem Full-Stack <bold>Inżynierem Oprogramowania</bold> mieszkającym w Polsce. Uwielbiam tworzyć nowe rozwiązania na web i mobile oraz pasjonuję się rozwiązywaniem problemów. Ukończenie studiów licencjackich na Politechnice w Koszycach dało mi solidne podstawy z zakresu informatyki.",
+    "intro-paragraph-2": "Podczas pracy jako frontend developer miałem okazję doskonalić umiejętność tworzenia wizualnie atrakcyjnych i przyjaznych dla użytkownika interfejsów. Ta praca nauczyła mnie współpracy w zespole i pokazała, jak ważna jest sztuka projektowania UX.",
+    "intro-paragraph-3": "Zapraszam do kontaktu przez podane dane. Dziękuję za wizytę i mam nadzieję, że wspólnie zrealizujemy Twoje technologiczne wizje."
+  },
+  "projects": {
+    "title": "Moje najnowsze projekty",
+    "summary": "Kolekcja projektów, które zrealizowałem lub nad którymi obecnie pracuję.",
+    "toki": "Aplikacja internetowa zaprojektowana, aby pomóc użytkownikom efektywnie śledzić zgłoszenia. Pozwala rejestrować kwestie, aktualizować ich status oraz przechowywać wszystkie niezbędne szczegóły.",
+    "pokedex": "Aplikacja Pokédex stworzona w Vue.js, która umożliwia przeglądanie, wyszukiwanie i wyświetlanie szczegółowych informacji o różnych Pokémonach, w tym o ich statystykach i umiejętnościach.",
+    "graphs": "Jednostronicowa aplikacja React, pozwalająca użytkownikom tworzyć struktury grafowe, eksportować obszar roboczy jako obraz PNG oraz sprawdzać poprawność kolorowania."
+  },
+  "experience": {
+    "title": "Doświadczenie zawodowe",
+    "summary": {
+      "experience_summary": "Ponad 1,5 roku doświadczenia w tworzeniu oprogramowania.",
+      "education": "Karierę rozpocząłem, ucząc się koncepcji inżynierii oprogramowania na Politechnice w Koszycach.",
+      "promiseo": "Pierwszą pracą była rola frontend developera w niepełnym wymiarze godzin w Promiseo, agencji marketingowej w Koszycach. Tworzyłem nowe strony dla różnych klientów.",
+      "boataround": "Następnie dołączyłem do Boataround, firmy wynajmującej jachty w Bratysławie. Dodawałem nowe funkcje, ulepszałem istniejące rozwiązania i pomogłem stworzyć nową aplikację webową dla właścicieli jachtów z wykorzystaniem React i TypeScript."
+    },
+    "boataround": {
+      "description": "Tworzenie i optymalizacja komponentów oraz dynamicznych stron dla platformy wynajmu jachtów przy użyciu Vue.js, React i Node.js oraz optymalizacja zapytań MongoDB, co skróciło czas ładowania stron. Współpraca z różnymi działami w celu wdrażania rozwiązań dla szerokiego zakresu funkcji. Przeprowadzanie przeglądów kodu i usuwanie krytycznych błędów UI/UX, co poprawiło doświadczenia użytkowników. Wdrażanie testów A/B w celu oceny i udoskonalenia funkcji strony, zwiększając współczynnik konwersji i zaangażowanie użytkowników.",
+      "date": "Wrzesień 2023 – Czerwiec 2024",
+      "location": "Bratysława, Słowacja",
+      "position": "Inżynier Oprogramowania"
+    },
+    "freelance": {
+      "description": "Przebudowa interfejsu frontendowego serwisu do konwersji czasu poprzez migrację z Bootstrap do Bulma CSS, co poprawiło czytelność kodu i zmniejszyło nadmiar CSS. Dostarczanie rozwiązań full-stack dla klientów z wykorzystaniem React, Vue.js, TypeScript oraz frameworka Flask w Pythonie, dostosowując implementacje do indywidualnych wymagań biznesowych.",
+      "date": "Lipiec 2023 – Listopad 2024",
+      "location": "Zdalnie",
+      "position": "Inżynier Oprogramowania"
+    },
+    "promiseo": {
+      "description": "Tworzenie atrakcyjnych wizualnie interfejsów webowych przy użyciu HTML, CSS/Sass, JavaScript i Vue.js. Ścisła współpraca z zespołami projektowymi i produktowymi w celu przekształcania wireframe’ów oraz makiet w w pełni funkcjonalne strony internetowe dla różnych małych i średnich lokalnych firm.",
+      "date": "Luty 2023 – Maj 2023",
+      "location": "Koszyce, Słowacja",
+      "position": "Inżynier Frontendu"
+    }
+  }
 }

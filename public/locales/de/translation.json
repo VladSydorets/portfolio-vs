@@ -1,26 +1,56 @@
 {
-  "software-engineer": "Softwareingenieur",
-  "my-name-is": "Hey! 👋 Mein Name ist",
-  "intro-paragraph-1": "Hallo, Welt! Mein Name ist <bold>Vlad</bold> und ich bin ein Full-Stack <bold>Softwareingenieur</bold>, der in Polen lebt und gerne neue Dinge für Web und Mobile entwickelt sowie eine Leidenschaft für Problemlösungen hat. Mit dem erfolgreichen Abschluss meines Bachelorstudiums an der Technischen Universität Košice verfüge ich über ein tiefgreifendes Verständnis der grundlegenden Prinzipien der Informatik.",
-  "intro-paragraph-2": "Während meiner Zeit als Frontend-Entwickler hatte ich die unschätzbare Gelegenheit, meine Fähigkeiten im Erstellen visuell ansprechender und nutzerzentrierter Oberflächen zu verfeinern. Diese Phase ermöglichte nicht nur eine reibungslose Zusammenarbeit mit diversen, funktionsübergreifenden Teams, sondern gewährte mir auch tiefe Einblicke in die komplexe Kunst der Benutzererfahrung.",
-  "intro-paragraph-3": "Zögern Sie nicht, mich über die angegebenen Kontaktinformationen zu erreichen. Vielen Dank für Ihren Besuch, und ich freue mich auf die Möglichkeit, gemeinsam Ihre technologischen Visionen zum Leben zu erwecken.",
-  "get-in-touch": "Kontakt aufnehmen",
-  "first-name": "Vorname",
-  "last-name": "Nachname",
-  "email": "E-Mail",
-  "subject": "Betreff",
-  "your-message": "Ihre Nachricht",
-  "send-message": "Nachricht senden",
-  "message-sent-success": "Nachricht erfolgreich gesendet!",
-  "message-sent-failure": "Nachricht konnte nicht gesendet werden.",
-  "first-name-required": "Vorname ist erforderlich.",
-  "email-required": "E-Mail ist erforderlich.",
-  "subject-required": "Betreff ist erforderlich.",
-  "message-required": "Nachricht ist erforderlich.",
-  "visit-website": "Website besuchen",
+  "software-engineer": "Software-Ingenieur",
+  "my-name-is": "Hey!👋 Ich heiße",
+  "made-with": "Erstellt mit",
+  "for": "für",
   "go-to-repo": "Zum Repository",
-  "view-site": "Seite ansehen!",
-  "contact-me": "Kontaktieren Sie mich",
+  "view-site": "Website ansehen!",
   "download-cv": "Lebenslauf herunterladen",
-  "hero-paragraph": "Ich bin ein <bold>Softwareingenieur</bold>, der die Arbeit erledigt. Derzeit konzentriere ich mich auf <skill>Full-Stack</skill>-Web- und Mobile-Entwicklung."
+  "skills": "Fähigkeiten",
+  "hero-paragraph": "Ich bin ein <bold>Software-Ingenieur</bold>, der Aufgaben zuverlässig umsetzt. Derzeit konzentriere ich mich auf <skill>Full-Stack</skill> Web- und Mobile-Entwicklung.",
+  "nav": {
+    "about": "0. Über mich",
+    "experience": "1. Erfahrung",
+    "projects": "2. Projekte"
+  },
+  "about-me": {
+    "title": "Über mich",
+    "intro-paragraph-1": "Hallo Welt! Mein Name ist <bold>Vlad</bold> und ich bin ein Full-Stack <bold>Software-Ingenieur</bold> mit Sitz in Polen. Ich liebe es, neue Dinge für Web und Mobile zu entwickeln und habe eine Leidenschaft fürs Problemlösen. Mein Bachelorabschluss an der Technischen Universität Košice hat mir ein tiefes Verständnis grundlegender Informatikprinzipien vermittelt.",
+    "intro-paragraph-2": "Während meiner Zeit als Frontend-Entwickler konnte ich meine Fähigkeiten in der Gestaltung visuell ansprechender und benutzerzentrierter Oberflächen verfeinern. Diese Erfahrung zeigte mir, wie wichtig die Zusammenarbeit in cross-funktionalen Teams und die Kunst des UX-Designs sind.",
+    "intro-paragraph-3": "Zögere nicht, mich über die angegebenen Kontaktdaten zu erreichen. Vielen Dank für deinen Besuch – ich freue mich darauf, gemeinsam deine technologischen Visionen Wirklichkeit werden zu lassen."
+  },
+  "projects": {
+    "title": "Meine neuesten Projekte",
+    "summary": "Eine Sammlung persönlicher Projekte, die ich erstellt habe oder an denen ich gerade arbeite.",
+    "toki": "Eine Webanwendung, die Nutzern hilft, Issues effizient nachzuverfolgen. Sie ermöglicht das Erfassen von Issues, das Aktualisieren ihres Status und das Speichern aller notwendigen Details.",
+    "pokedex": "Eine Pokédex-Webanwendung, die mit Vue.js erstellt wurde und es Nutzern erlaubt, verschiedene Pokémon zu durchsuchen, zu suchen und detaillierte Informationen zu ihren Werten und Fähigkeiten anzusehen.",
+    "graphs": "Eine Single-Page-React-Anwendung, die es Nutzern ermöglicht, Graphstrukturen zu erstellen, die Leinwand als PNG-Bild zu exportieren und die Korrektheit der Einfärbung zu prüfen."
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "summary": {
+      "experience_summary": "Über 1,5 Jahre Erfahrung in der Softwareentwicklung.",
+      "education": "Meine Karriere begann mit dem Studium der Softwaretechnik an der Technischen Universität Košice.",
+      "promiseo": "Meine erste Stelle war als Teilzeit-Frontend-Entwickler bei Promiseo, einer Marketingagentur in Košice. Ich war verantwortlich für die Entwicklung neuer Seiten für verschiedene Kunden.",
+      "boataround": "Anschließend wechselte ich zu Boataround, einem Yachtvermietungsunternehmen in Bratislava. Dort implementierte ich neue Features, verbesserte bestehende Funktionen und half mit beim Aufbau einer neuen Web-App für Bootsbesitzer mit React und TypeScript."
+    },
+    "boataround": {
+      "description": "Erstellung und Optimierung von Komponenten und dynamischen Seiten für eine Yachtvermietungsplattform mittels Vue.js, React und Node.js sowie Optimierung von MongoDB-Abfragen, wodurch die Ladezeiten verkürzt wurden. Zusammenarbeit mit verschiedenen Abteilungen zur Implementierung von Lösungen für eine Vielzahl von Funktionen. Durchführen von Code-Reviews und Beheben kritischer UI/UX-Fehler, um die Nutzererfahrung zu verbessern. Implementierung mehrerer A/B-Tests zur Bewertung und Verfeinerung von Website-Funktionen, was die Konversionsraten und das Nutzerengagement erhöhte.",
+      "date": "September 2023 – Juni 2024",
+      "location": "Bratislava, Slowakei",
+      "position": "Software-Ingenieur"
+    },
+    "freelance": {
+      "description": "Überarbeitung des Frontend-UIs einer Zeitumrechnungs-Website durch Migration von Bootstrap zu Bulma CSS, was die Wartbarkeit des Codes verbesserte und CSS-Überfrachtung reduzierte. Bereitstellung von Full-Stack-Lösungen für Kunden unter Verwendung von React, Vue.js, TypeScript und dem Flask-Framework in Python, wobei Implementierungen an individuelle Geschäftsanforderungen angepasst wurden.",
+      "date": "Juli 2023 – November 2024",
+      "location": "Remote",
+      "position": "Software-Ingenieur"
+    },
+    "promiseo": {
+      "description": "Erstellung visuell ansprechender Weboberflächen mit HTML, CSS/Sass, JavaScript und Vue.js. Enge Zusammenarbeit mit Design- und Produktteams, um Wireframes und Mockups in voll funktionsfähige Webseiten für verschiedene kleine und mittlere lokale Unternehmen umzusetzen.",
+      "date": "Februar 2023 – Mai 2023",
+      "location": "Košice, Slowakei",
+      "position": "Frontend-Entwickler"
+    }
+  }
 }

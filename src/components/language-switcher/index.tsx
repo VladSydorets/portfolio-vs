@@ -53,7 +53,7 @@ export default function LanguageSwitcher() {
           onClick={() => switchLanguage(lang.code)}
           className={`flex items-center gap-1 bg-transparent w-10 h-10 p-2 rounded-full transition-all cursor-pointer duration-300 ${
             currentLang === lang.code
-              ? "border border-[#A855F7]"
+              ? "border border-[#60A5FA]"
               : "border border-transparent dark:hover:border-white hover:border-black"
           }`}
           title={lang.name}

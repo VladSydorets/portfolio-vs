@@ -17,36 +17,38 @@ export default function ExperienceCard(props: Experience) {
   return (
     <div className="flex flex-col justify-between gap-5 w-full">
       <div
-        className={`flex flex-col gap-4 justify-between py-7 p-8 dark:bg-[#1d3c66] bg-[#eecbf6] transition-all duration-500 hover:scale-[102%] rounded-[16px]`}
+        className={`flex flex-col gap-4 justify-between py-7 p-8 dark:bg-[#162d4c] bg-[#e8f0f5] transition-all duration-500 hover:scale-[102%] rounded-[16px]`}
       >
         <div className="project-card-text flex flex-col gap-3">
           <h3
             className={`font-bold text-xl md:text-2xl flex items-center gap-2 tracking-tight`}
           >
             <PiSuitcaseSimple />
-            {props.position}
+            {t(props.position)}
           </h3>
           <p className="flex items-center gap-2 dark:text-gray-300 text-slate-700">
-            {props.companyName} • {props.location}
+            {props.companyName} • {t(props.location)}
           </p>
           <p className="flex items-center gap-2 dark:text-gray-300 text-slate-700">
             <FaRegCalendar />
-            {props.date}
+            {t(props.date)}
           </p>
           <ul className="list-disc text-sm md:text-base pl-5">
-            {props.description.split(". ").map((bulletpoint, index) => (
-              <li key={index}>{bulletpoint}</li>
-            ))}
+            {t(props.description)
+              .split(". ")
+              .map((bulletpoint, index) => (
+                <li key={index}>{bulletpoint}</li>
+              ))}
           </ul>
           <div>
             <h4 className="dark:text-gray-300 font-medium text-slate-700 mb-2">
-              Skills
+              {t("skills")}
             </h4>
             <ul className="flex flex-wrap gap-3 text-xs">
               {props.skills?.map((skill) => (
                 <li
                   key={skill}
-                  className="bg-purple-400 px-2 py-1 rounded-3xl cursor-default"
+                  className="dark:text-slate-700 bg-blue-200 px-2 py-1 rounded-3xl cursor-default"
                 >
                   {skill}
                 </li>

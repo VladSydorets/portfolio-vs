@@ -23,7 +23,7 @@ export default function Hero() {
           className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold ${aleo.className}`}
         >
           {t("my-name-is")}{" "}
-          <span className="text-[#A855F7] font-bold title animated-text border-r-4 dark:border-white border-black">
+          <span className="text-[#60A5FA] font-bold title animated-text border-r-4 dark:border-white border-black">
             Vlad
           </span>
         </h1>
@@ -32,17 +32,12 @@ export default function Hero() {
         <Trans
           i18nKey={"hero-paragraph"}
           components={{
-            bold: <span className="text-[#A855F7]" />,
+            bold: <span className="text-[#60A5FA]" />,
             skill: <span className="text-[#FFB86C]" />,
           }}
         />
       </p>
       <div className="buttons-row flex gap-4 text-sm sm:text-base md:text-lg">
-        <Button
-          text={t("contact-me")}
-          link="/contact"
-          icon={<FiArrowRightCircle />}
-        />
         <Button
           link="/assets/resume/cv.pdf"
           download="Vlad_Sydorets_CV.pdf"
