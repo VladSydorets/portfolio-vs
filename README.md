@@ -1,8 +1,10 @@
 # Personal Portfolio Website
 
-![Full App Screenshot](https://github.com/user-attachments/assets/719aed78-c33b-4e61-a57a-919285aebfa6)
+![Full App Screenshot](https://github.com/user-attachments/assets/f2123e8a-f6c7-4e12-a52b-4245a09d797b)
 
-Personal portfolio website showcasing all of my skills, projects, and experience relevant to software engineering.
+
+
+A personal portfolio website highlighting my skills, projects, and experience in software engineering.
 
 ## Technologies
 - **Next.js**: Core framework
