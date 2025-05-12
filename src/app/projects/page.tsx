@@ -2,19 +2,19 @@
 
 import Projects from "@/components/projects";
 import Title from "@/components/title";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { Trans, useTranslation } from "react-i18next";
 import Loading from "../loading";
 
-export const metadata: Metadata = {
-  title: "Projects",
-  description:
-    "A showcase of my software engineering projects, including React and TypeScript applications.",
-  openGraph: {
-    title: "Projects by Vladyslav Sydorets",
-    description: "Discover my latest work in web development.",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Projects",
+//   description:
+//     "A showcase of my software engineering projects, including React and TypeScript applications.",
+//   openGraph: {
+//     title: "Projects by Vladyslav Sydorets",
+//     description: "Discover my latest work in web development.",
+//   },
+// };
 
 export default function ProjectsPage() {
   const { t, ready } = useTranslation();

@@ -2,19 +2,19 @@
 
 import ExperienceComponent from "@/components/experience";
 import Title from "@/components/title";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import { Trans, useTranslation } from "react-i18next";
 import Loading from "../loading";
 
-export const metadata: Metadata = {
-  title: "Experience",
-  description:
-    "A brief description of my software engineering experience, developing in React, Python and TypeScript.",
-  openGraph: {
-    title: "Experience of Vladyslav Sydorets",
-    description: "Discover my latest professional experience.",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "Experience",
+//   description:
+//     "A brief description of my software engineering experience, developing in React, Python and TypeScript.",
+//   openGraph: {
+//     title: "Experience of Vladyslav Sydorets",
+//     description: "Discover my latest professional experience.",
+//   },
+// };
 
 export default function Experience() {
   const { t, ready } = useTranslation();
