@@ -39,8 +39,7 @@ export default function Hero() {
       </p>
       <div className="buttons-row flex gap-4 text-sm sm:text-base md:text-lg">
         <Button
-          link="/assets/resume/cv.pdf"
-          download="Vlad_Sydorets_CV.pdf"
+          link="https://drive.google.com/file/d/1qNS_Y5aXhmtvQQjqOGbo6QkFT9nNF2UQ/view?usp=sharing"
           text={t("download-cv")}
           icon={<FiDownload />}
         />

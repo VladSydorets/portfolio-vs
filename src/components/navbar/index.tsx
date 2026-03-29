@@ -53,8 +53,7 @@ export default function Navbar() {
       <div className="hidden lg:flex items-center gap-6 text-lg">
         <Navigation />
         <Button
-          link="/assets/resume/cv.pdf"
-          download="Vlad_Sydorets_CV.pdf"
+          link="https://drive.google.com/file/d/1qNS_Y5aXhmtvQQjqOGbo6QkFT9nNF2UQ/view?usp=sharing"
           text={t("download-cv")}
           icon={<FiDownload />}
         />
@@ -105,8 +104,7 @@ export default function Navbar() {
                 </div>
                 <div className="w-full pt-4 text-sm lg:text-lg lg:gap-4 flex justify-center items-center border-t border-gray-200 dark:border-slate-800">
                   <Button
-                    link="/assets/resume/cv.pdf"
-                    download="Vlad_Sydorets_CV.pdf"
+                    link="https://drive.google.com/file/d/1qNS_Y5aXhmtvQQjqOGbo6QkFT9nNF2UQ/view?usp=sharing"
                     text="Download CV"
                     icon={<FiDownload />}
                   />

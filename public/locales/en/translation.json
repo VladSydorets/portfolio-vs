@@ -3,11 +3,10 @@
   "my-name-is": "Hey!👋 My name is",
   "made-with": "Made with",
   "for": "for",
-  "go-to-repo": "Go to repo",
-  "view-site": "View site!",
-  "download-cv": "Download CV",
-  "skills": "Skills",
-  "hero-paragraph": "I'm a <bold>Software Engineer</bold> who gets the job done. Currently, I'm focused on <skill>Full-stack</skill> Web and Mobile Development.",
+  "go-to-repo": "Source",
+  "view-site": "Company website",
+  "live-demo": "Live Demo",
+  "hero-paragraph": "I'm a <bold>Software Engineer</bold> who gets the job done. Currently, I'm focused on <skill>Full-stack</skill> Web Development.",
   "nav": {
     "about": "0. About",
     "experience": "1. Experience",
@@ -15,9 +14,9 @@
   },
   "about-me": {
     "title": "About me",
-    "intro-paragraph-1": "Hello, World! My name is <bold>Vlad</bold> and I am a Full-Stack <bold>Software Engineer</bold> based in Poland, who enjoys creating new things for the web and mobile and has a passion for problem solving. With the successful completion of my Bachelor’s Degree at the Technical University of Košice, my educational background equips me with a profound understanding of fundamental computer science principles.",
-    "intro-paragraph-2": "During my tenure as a frontend developer, I had the invaluable opportunity to refine my expertise in crafting visually captivating and user-centric interfaces. This chapter not only facilitated seamless collaboration with diverse, cross-functional teams but also granted me a profound insight into the intricate artistry of user experience.",
-    "intro-paragraph-3": "Feel free to reach out via the provided contact information. Thank you for visiting, and I look forward to the opportunity of working together to bring your technological visions to life."
+    "intro-paragraph-1": "I am a Software Engineer with experience in building full-stack solutions, APIs, and microservices using React/Next.js/Vue.js on the frontend and Node.js/Python on the backend. I also have hands-on experience with DevOps tooling, cloud infrastructure, and AI-powered features, including LLM integrations and agentic workflows.",
+    "intro-paragraph-2": "Actively expanding my backend skills with other technologies, such as Go, to complement my Node.js/Python experience.",
+    "intro-paragraph-3": "I am open to opportunities where I can contribute my skills and grow professionally in a dynamic tech environment."
   },
   "projects": {
     "title": "My Latest Projects",
@@ -28,29 +27,23 @@
   },
   "experience": {
     "title": "Professional Experience",
-    "summary": {
-      "experience_summary": "1.5+ years of professional development experience.",
-      "education": "I started my career learning Software Engineering concepts while studying at the Technical University of Kosice.",
-      "promiseo": "My first job was a part-time frontend role at Promiseo, a marketing agency in Košice. I was responsible for developing new pages for different clients.",
-      "boataround": "After that, I joined Boataround, a yacht rental company in Bratislava. There, I worked on adding new features, improving existing ones, and helped build a brand new web app for yacht owners using React and TypeScript."
-    },
     "boataround": {
-      "description": "Created and optimized components and dynamic pages for a yacht rental web platform using Vue.js, React, and Node.js, and optimized MongoDB queries, reducing page load time. Cooperated with various departments to implement solutions for a wide range of features. Conducted code reviews and resolved critical UI/UX bugs, improving user experience. Implemented several A/B tests to evaluate and refine website features, improving conversion rates and increasing user engagement.",
+      "description": "● Developed reusable <strong>Vue.js</strong> components and migrated parts of the yacht rental platform from <strong>Vue.js</strong> (<strong>JavaScript</strong>) to <strong>React</strong> (<strong>TypeScript</strong>), improving maintainability and performance.\n● Optimized <strong>MongoDB</strong> aggregation pipelines in <strong>Node.js</strong> for multilingual SEO template generation across thousands of pages.\n● Implemented <strong>Node.js</strong> REST API endpoints for an automated email reply service (booking confirmations, reminders).\n● Conducted frontend A/B testing on critical user flows (payment, search, boat detail page) to refine website features.",
       "date": "September 2023 - June 2024",
       "location": "Bratislava, Slovakia",
       "position": "Software Engineer"
     },
     "freelance": {
-      "description": "Revamped the frontend UI of a time conversion website by migrating from Bootstrap to Bulma CSS, improving code maintainability and reducing CSS bloat. Delivered full-stack solutions for clients using React, Vue.js, TypeScript, and Python’s Flask framework, tailoring implementations to meet unique business requirements.",
-      "date": "July 2023 - November 2024",
+      "description": "● Expanded an Australian English-testing platform (4,500+ active users) by building practice modules in <strong>Vue.js</strong>, extending scoring logic, resolving <strong>Firebase</strong> auth and <strong>Stripe</strong> payment integration issues, and improving the <strong>Python Django</strong> backend.\n● Developed an MVP for an AI-powered search visibility platform using <strong>Next.js</strong>, implementing prompt categorization, source scoring, and a <strong>LangChain</strong>-based RAG pipeline to analyze brand visibility across LLMs.\n● Built an automated SEO analysis system using <strong>Crawlee</strong> for web crawling, <strong>BullMQ</strong> for async job queues, and <strong>tRPC</strong> for API layer, with <strong>Puppeteer</strong>-powered PDF report generation and interactive dashboard UI.\n● Contributed to development of an orchestration framework by implementing <strong>React</strong> components for the UI component library, developing <strong>FastAPI</strong> services, and improving <strong>pytest</strong> test coverage from ~60% to ~90%.\n● Modernized a date and time utility website by migrating the frontend from Bootstrap to <strong>Bulma CSS</strong> based on new <strong>Figma</strong> designs, adding <strong>JavaScript</strong> interactions, building new pages, and extending the <strong>Python Flask</strong> backend.",
+      "date": "August 2024 - Present",
       "location": "Remote",
-      "position": "Software Engineer"
+      "position": "Full-Stack Engineer"
     },
     "promiseo": {
-      "description": "Built visually appealing web interfaces using HTML, CSS/Sass, JavaScript, and Vue.js. Collaborated closely with design and product teams to transform wireframes and mockups into fully functional web pages for various small and medium-sized local businesses.",
+      "description": "● Collaborated on 4 client websites for small to mid-size businesses/government agencies across Slovakia, Hungary and Czechia — converting <strong>Adobe XD</strong>/<strong>Figma</strong> designs into web pages using <strong>HTML</strong>, <strong>CSS</strong>/<strong>SCSS</strong>, <strong>JavaScript</strong> and <strong>Vue.js</strong>.\n● Built a <strong>Python</strong> scraping tool (<strong>BeautifulSoup</strong> + <strong>Requests</strong>) to migrate legacy content, perform data cleaning and extract 1,000+ media assets and multilingual text articles for a client's website migration.",
       "date": "February 2023 - May 2023",
       "location": "Košice, Slovakia",
-      "position": "Frontend Engineer"
+      "position": "Frontend Developer (Part-time)"
     }
   }
 }

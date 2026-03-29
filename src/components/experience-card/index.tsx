@@ -4,8 +4,7 @@ import Loading from "@/app/loading";
 import { Experience } from "@/types/experience";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { FaRegCalendar } from "react-icons/fa";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaRegCalendar, FaGlobe } from "react-icons/fa";
 import { PiSuitcaseSimple } from "react-icons/pi";
 
 export default function ExperienceCard(props: Experience) {
@@ -29,39 +28,36 @@ export default function ExperienceCard(props: Experience) {
           <p className="flex items-center gap-2 dark:text-gray-300 text-slate-700">
             {props.companyName} • {t(props.location)}
           </p>
-          <p className="flex items-center gap-2 dark:text-gray-300 text-slate-700">
+          <p className="flex items-center gap-2 dark:text-gray-300 text-slate-700 mb-2">
             <FaRegCalendar />
             {t(props.date)}
           </p>
-          <ul className="list-disc text-sm md:text-base pl-5">
+          <ul className="flex flex-wrap gap-2 text-xs mb-2">
+            {props.skills?.map((skill) => (
+              <li
+                key={skill}
+                className="dark:text-slate-700 font-medium bg-blue-200 px-2 py-1 rounded-3xl cursor-default"
+              >
+                {skill}
+              </li>
+            ))}
+          </ul>
+          <ul className="text-sm md:text-base flex flex-col gap-2">
             {t(props.description)
-              .split(". ")
+              .split("\n")
               .map((bulletpoint, index) => (
-                <li key={index}>{bulletpoint}</li>
+                <li key={index} dangerouslySetInnerHTML={{ __html: bulletpoint }} />
               ))}
           </ul>
-          <div>
-            <h4 className="dark:text-gray-300 font-medium text-slate-700 mb-2">
-              {t("skills")}
-            </h4>
-            <ul className="flex flex-wrap gap-3 text-xs">
-              {props.skills?.map((skill) => (
-                <li
-                  key={skill}
-                  className="dark:text-slate-700 bg-blue-200 px-2 py-1 rounded-3xl cursor-default"
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
-          </div>
           <>
             {props.companyLink ? (
               <Link
                 href={props.companyLink}
                 className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+                target="_blank"
+                rel="noreferrer"
               >
-                {t("view-site")} <FaExternalLinkAlt />
+                <FaGlobe /> {t("view-site")}
               </Link>
             ) : (
               ""

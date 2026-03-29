@@ -3,11 +3,12 @@
   "my-name-is": "Cześć!👋 Mam na imię",
   "made-with": "Stworzone za pomocą",
   "for": "dla",
-  "go-to-repo": "Przejdź do repozytorium",
-  "view-site": "Zobacz stronę!",
+  "go-to-repo": "Kod źródłowy",
+  "view-site": "Strona firmy",
+  "live-demo": "Wersja demo",
   "download-cv": "Pobierz CV",
   "skills": "Umiejętności",
-  "hero-paragraph": "Jestem <bold>Inżynierem Oprogramowania</bold>, który realizuje zadania. Obecnie skupiam się na <skill>Full-stack</skill> tworzeniu aplikacji webowych i mobilnych.",
+  "hero-paragraph": "Jestem <bold>Inżynierem Oprogramowania</bold>, który realizuje zadania. Obecnie skupiam się na <skill>Full-stack</skill> tworzeniu aplikacji webowych.",
   "nav": {
     "about": "0. O mnie",
     "experience": "1. Doświadczenie",
@@ -15,9 +16,9 @@
   },
   "about-me": {
     "title": "O mnie",
-    "intro-paragraph-1": "Witaj, świecie! Nazywam się <bold>Vlad</bold> i jestem Full-Stack <bold>Inżynierem Oprogramowania</bold> mieszkającym w Polsce. Uwielbiam tworzyć nowe rozwiązania na web i mobile oraz pasjonuję się rozwiązywaniem problemów. Ukończenie studiów licencjackich na Politechnice w Koszycach dało mi solidne podstawy z zakresu informatyki.",
-    "intro-paragraph-2": "Podczas pracy jako frontend developer miałem okazję doskonalić umiejętność tworzenia wizualnie atrakcyjnych i przyjaznych dla użytkownika interfejsów. Ta praca nauczyła mnie współpracy w zespole i pokazała, jak ważna jest sztuka projektowania UX.",
-    "intro-paragraph-3": "Zapraszam do kontaktu przez podane dane. Dziękuję za wizytę i mam nadzieję, że wspólnie zrealizujemy Twoje technologiczne wizje."
+    "intro-paragraph-1": "Jestem Inżynierem Oprogramowania z doświadczeniem w tworzeniu rozwiązań full-stack, API i mikrousług przy użyciu React/Next.js/Vue.js na frontendzie oraz Node.js/Python na backendzie. Posiadam również praktyczne doświadczenie z narzędziami DevOps, infrastrukturą chmurową oraz funkcjami opartymi na sztucznej inteligencji, w tym integracjami LLM i przepływami pracy opartymi na agentach.",
+    "intro-paragraph-2": "Aktywnie rozwijam swoje umiejętności backendowe w innych technologiach, takich jak Go, aby uzupełnić moje doświadczenie z Node.js/Python.",
+    "intro-paragraph-3": "Jestem otwarty na możliwości, w których będę mógł wnieść swoje umiejętności i rozwijać się zawodowo w dynamicznym środowisku technologicznym."
   },
   "projects": {
     "title": "Moje najnowsze projekty",
@@ -28,29 +29,23 @@
   },
   "experience": {
     "title": "Doświadczenie zawodowe",
-    "summary": {
-      "experience_summary": "Ponad 1,5 roku doświadczenia w tworzeniu oprogramowania.",
-      "education": "Karierę rozpocząłem, ucząc się koncepcji inżynierii oprogramowania na Politechnice w Koszycach.",
-      "promiseo": "Pierwszą pracą była rola frontend developera w niepełnym wymiarze godzin w Promiseo, agencji marketingowej w Koszycach. Tworzyłem nowe strony dla różnych klientów.",
-      "boataround": "Następnie dołączyłem do Boataround, firmy wynajmującej jachty w Bratysławie. Dodawałem nowe funkcje, ulepszałem istniejące rozwiązania i pomogłem stworzyć nową aplikację webową dla właścicieli jachtów z wykorzystaniem React i TypeScript."
-    },
     "boataround": {
-      "description": "Tworzenie i optymalizacja komponentów oraz dynamicznych stron dla platformy wynajmu jachtów przy użyciu Vue.js, React i Node.js oraz optymalizacja zapytań MongoDB, co skróciło czas ładowania stron. Współpraca z różnymi działami w celu wdrażania rozwiązań dla szerokiego zakresu funkcji. Przeprowadzanie przeglądów kodu i usuwanie krytycznych błędów UI/UX, co poprawiło doświadczenia użytkowników. Wdrażanie testów A/B w celu oceny i udoskonalenia funkcji strony, zwiększając współczynnik konwersji i zaangażowanie użytkowników.",
+      "description": "● Tworzenie reużywalnych komponentów <strong>Vue.js</strong> i migracja części platformy wynajmu jachtów z <strong>Vue.js</strong> (<strong>JavaScript</strong>) na <strong>React</strong> (<strong>TypeScript</strong>), poprawa utrzymywalności i wydajności.\n● Optymalizacja potoków agregacji <strong>MongoDB</strong> w <strong>Node.js</strong> na potrzeby generowania wielojęzycznych szablonów SEO dla tysięcy stron.\n● Wdrożenie endpointów REST API w <strong>Node.js</strong> dla zautomatyzowanej obsługi e-maili (potwierdzenia rezerwacji, przypomnienia).\n● Przeprowadzanie testów A/B na frontendzie dla kluczowych ścieżek użytkownika (płatności, wyszukiwanie, strona jachtu) w celu dopracowania funkcjonalności serwisu.",
       "date": "Wrzesień 2023 – Czerwiec 2024",
       "location": "Bratysława, Słowacja",
       "position": "Inżynier Oprogramowania"
     },
     "freelance": {
-      "description": "Przebudowa interfejsu frontendowego serwisu do konwersji czasu poprzez migrację z Bootstrap do Bulma CSS, co poprawiło czytelność kodu i zmniejszyło nadmiar CSS. Dostarczanie rozwiązań full-stack dla klientów z wykorzystaniem React, Vue.js, TypeScript oraz frameworka Flask w Pythonie, dostosowując implementacje do indywidualnych wymagań biznesowych.",
-      "date": "Lipiec 2023 – Listopad 2024",
+      "description": "● Rozbudowa australijskiej platformy do testowania języka angielskiego (ponad 4500 aktywnych użytkowników) poprzez tworzenie modułów ćwiczeniowych w <strong>Vue.js</strong>, rozszerzenie logiki oceniania, rozwiązanie problemów z autoryzacją <strong>Firebase</strong> i integracją płatności <strong>Stripe</strong>, oraz poprawę backendu <strong>Python Django</strong>.\n● Stworzenie MVP platformy AI do analizy widoczności w wyszukiwarkach za pomocą <strong>Next.js</strong>, wdrażając kategoryzację promptów, ocenę źródeł oraz potok RAG oparty na <strong>LangChain</strong> w celu analizy widoczności marki z wykorzystaniem LLM.\n● Zbudowanie zautomatyzowanego systemu analizy SEO korzystającego z <strong>Crawlee</strong> do crawlowania stron, <strong>BullMQ</strong> do asynchronicznych kolejek zadań praz <strong>tRPC</strong> jako warstwy API, z możliwością generowania raportów PDF przez <strong>Puppeteer</strong> i interaktywnym kokpitem.\n● Udział w tworzeniu frameworku orkiestracji poprzez implementację komponentów <strong>React</strong> dla biblioteki UI, rozwijanie usług <strong>FastAPI</strong> oraz podniesienie pokrycia testami <strong>pytest</strong> z ok. 60% do 90%.\n● Modernizacja serwisu narzędziowego z datami i czasem poprzez migrację frontendu z Bootstrap na <strong>Bulma CSS</strong> w oparciu o nowe projekty z <strong>Figmy</strong>, dodanie interakcji w <strong>JavaScript</strong>, budowę nowych stron oraz rozbudowę backendu we <strong>Flask</strong> (<strong>Python</strong>).",
+      "date": "Sierpień 2024 - Obecnie",
       "location": "Zdalnie",
-      "position": "Inżynier Oprogramowania"
+      "position": "Full-Stack Engineer"
     },
     "promiseo": {
-      "description": "Tworzenie atrakcyjnych wizualnie interfejsów webowych przy użyciu HTML, CSS/Sass, JavaScript i Vue.js. Ścisła współpraca z zespołami projektowymi i produktowymi w celu przekształcania wireframe’ów oraz makiet w w pełni funkcjonalne strony internetowe dla różnych małych i średnich lokalnych firm.",
+      "description": "● Współpraca przy tworzeniu 4 stron internetowych dla małych i średnich firm oraz instytucji rządowych na Słowacji, Węgrzech i w Czechach — kodowanie projektów z <strong>Adobe XD</strong>/<strong>Figma</strong> do stron internetowych z wykorzystaniem <strong>HTML</strong>, <strong>CSS</strong>/<strong>SCSS</strong>, <strong>JavaScript</strong> i <strong>Vue.js</strong>.\n● Stworzenie narzędzia w <strong>Pythonie</strong> (<strong>BeautifulSoup</strong> + <strong>Requests</strong>) do migracji starych treści, czyszczenia danych oraz ekstrakcji ponad 1000 zasobów multimedialnych i wielojęzycznych artykułów na potrzeby migracji strony klienta.",
       "date": "Luty 2023 – Maj 2023",
       "location": "Koszyce, Słowacja",
-      "position": "Inżynier Frontendu"
+      "position": "Programista Frontend (pół etatu)"
     }
   }
 }

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
-import { BiLogoUpwork } from "react-icons/bi";
+
 
 export default function SocialIcons() {
   const socialLinks = [
@@ -20,11 +20,7 @@ export default function SocialIcons() {
       icon: <FiMail />,
       link: "mailto: sidorecvv@gmail.com",
     },
-    {
-      name: "Upwork",
-      icon: <BiLogoUpwork />,
-      link: "https://www.upwork.com/freelancers/~0133e9f54be64fec83",
-    },
+
   ];
   return (
     <div className="social-icons">

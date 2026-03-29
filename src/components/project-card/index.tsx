@@ -51,7 +51,7 @@ export default function ProjectCard(props: Project) {
             link={props.repo}
             icon={<FaGithub />}
           />
-          <Button text={t("view-site")} link={props.demo} icon={<FaRegEye />} />
+          <Button text={t("live-demo")} link={props.demo} icon={<FaRegEye />} />
         </div>
       </div>
     </div>
