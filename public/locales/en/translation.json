@@ -6,6 +6,8 @@
   "go-to-repo": "Source",
   "view-site": "Company website",
   "live-demo": "Live Demo",
+  "download-cv": "Download CV",
+  "skills": "Skills",
   "hero-paragraph": "I'm a <bold>Software Engineer</bold> who gets the job done. Currently, I'm focused on <skill>Full-stack</skill> Web Development.",
   "nav": {
     "about": "0. About",
