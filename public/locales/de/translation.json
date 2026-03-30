@@ -7,15 +7,17 @@
   "view-site": "Unternehmenswebsite",
   "live-demo": "Live-Demo",
   "download-cv": "Lebenslauf herunterladen",
+  "more-about-me": "Mehr über mich",
   "skills": "Fähigkeiten",
   "hero-paragraph": "Ich bin ein <bold>Software-Ingenieur</bold>, der Aufgaben zuverlässig umsetzt. Derzeit konzentriere ich mich auf <skill>Full-Stack</skill> Web-Entwicklung.",
   "nav": {
     "about": "0. Über mich",
-    "experience": "1. Erfahrung",
-    "projects": "2. Projekte"
+    "projects": "1. Projekte"
   },
   "about-me": {
     "title": "Über mich",
+    "role": "Software-Ingenieur <0>(Fullstack-Ingenieur)</0>",
+    "location": "Breslau, Polen",
     "intro-paragraph-1": "Ich bin ein Software-Ingenieur mit Erfahrung in der Entwicklung von Full-Stack-Lösungen, APIs und Microservices mit React/Next.js/Vue.js im Frontend und Node.js/Python im Backend. Außerdem verfüge ich über praktische Erfahrung mit DevOps-Tools, Cloud-Infrastruktur und KI-gestützten Funktionen, einschließlich LLM-Integrationen und agentenbasierten Workflows.",
     "intro-paragraph-2": "Derzeit erweitere ich meine Backend-Kenntnisse mit anderen Technologien wie Go, um meine Node.js/Python-Erfahrung zu ergänzen.",
     "intro-paragraph-3": "Ich bin offen für Möglichkeiten, bei denen ich meine Fähigkeiten einbringen und mich in einem dynamischen Technologieumfeld beruflich weiterentwickeln kann."

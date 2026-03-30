@@ -1,22 +1,22 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ExperienceCard from "../experience-card";
 import { experiences } from "@/data/experiences";
 import I18nProvider from "../I18nProvider";
 
 export default function Experience() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+
   return (
-    <div className="w-full flex flex-col gap-12">
+    <div className="w-full flex flex-col gap-6">
       <I18nProvider>
-        {experiences.map((experience) => (
+        {experiences.map((experience, index) => (
           <ExperienceCard
             key={experience.companyName}
-            companyName={experience.companyName}
-            companyLink={experience.companyLink}
-            location={experience.location}
-            date={experience.date}
-            position={experience.position}
-            description={experience.description}
-            skills={experience.skills}
+            {...experience}
+            isOpen={openIndex === index}
+            onToggle={() => setOpenIndex(openIndex === index ? null : index)}
           />
         ))}
       </I18nProvider>

@@ -7,15 +7,17 @@
   "view-site": "Company website",
   "live-demo": "Live Demo",
   "download-cv": "Download CV",
+  "more-about-me": "More about me",
   "skills": "Skills",
   "hero-paragraph": "I'm a <bold>Software Engineer</bold> who gets the job done. Currently, I'm focused on <skill>Full-stack</skill> Web Development.",
   "nav": {
     "about": "0. About",
-    "experience": "1. Experience",
-    "projects": "2. Projects"
+    "projects": "1. Projects"
   },
   "about-me": {
-    "title": "About me",
+    "title": "About",
+    "role": "Software Engineer <0>(Fullstack engineer)</0>",
+    "location": "Wrocław, Poland",
     "intro-paragraph-1": "I am a Software Engineer with experience in building full-stack solutions, APIs, and microservices using React/Next.js/Vue.js on the frontend and Node.js/Python on the backend. I also have hands-on experience with DevOps tooling, cloud infrastructure, and AI-powered features, including LLM integrations and agentic workflows.",
     "intro-paragraph-2": "Actively expanding my backend skills with other technologies, such as Go, to complement my Node.js/Python experience.",
     "intro-paragraph-3": "I am open to opportunities where I can contribute my skills and grow professionally in a dynamic tech environment."

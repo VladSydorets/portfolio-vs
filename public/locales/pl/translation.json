@@ -7,15 +7,17 @@
   "view-site": "Strona firmy",
   "live-demo": "Wersja demo",
   "download-cv": "Pobierz CV",
+  "more-about-me": "Więcej o mnie",
   "skills": "Umiejętności",
   "hero-paragraph": "Jestem <bold>Inżynierem Oprogramowania</bold>, który realizuje zadania. Obecnie skupiam się na <skill>Full-stack</skill> tworzeniu aplikacji webowych.",
   "nav": {
     "about": "0. O mnie",
-    "experience": "1. Doświadczenie",
-    "projects": "2. Projekty"
+    "projects": "1. Projekty"
   },
   "about-me": {
     "title": "O mnie",
+    "role": "Inżynier Oprogramowania <0>(Fullstack engineer)</0>",
+    "location": "Wrocław, Polska",
     "intro-paragraph-1": "Jestem Inżynierem Oprogramowania z doświadczeniem w tworzeniu rozwiązań full-stack, API i mikrousług przy użyciu React/Next.js/Vue.js na frontendzie oraz Node.js/Python na backendzie. Posiadam również praktyczne doświadczenie z narzędziami DevOps, infrastrukturą chmurową oraz funkcjami opartymi na sztucznej inteligencji, w tym integracjami LLM i przepływami pracy opartymi na agentach.",
     "intro-paragraph-2": "Aktywnie rozwijam swoje umiejętności backendowe w innych technologiach, takich jak Go, aby uzupełnić moje doświadczenie z Node.js/Python.",
     "intro-paragraph-3": "Jestem otwarty na możliwości, w których będę mógł wnieść swoje umiejętności i rozwijać się zawodowo w dynamicznym środowisku technologicznym."

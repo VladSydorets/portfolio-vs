@@ -3,4 +3,5 @@ export type Skill = {
   icon: any;
   link: string;
   category?: string;
+  color?: string;
 };
